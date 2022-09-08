@@ -1,0 +1,2 @@
+# Educational-website-FEUT
+This is an educational website customized for the students of "Fakulteti Ekonomik, Universiteti Tiranes". It contains basic information about the school. It also offers to the students the oportunity to ask questions, find the pivot exercises for each subjet and take different quizzes to prepare themselves for the upcoming exams.

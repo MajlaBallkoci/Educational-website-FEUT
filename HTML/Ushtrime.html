@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../CSS/Ushtrime.css" />
+    <title>Ushtrime</title>
+  </head>
+  <body>
+    <header>
+      <img class="header-img" src="../IMAZHE/logo.png" />
+      <div class="header-text">
+        <span class="title">UNIVERSITETI I TIRANES</span>
+        <span class="subtitle">Fakulteti i Ekonomise</span>
+      </div>
+    </header>
+
+    <div class="menu">
+      <div class="nav-shadow"></div>
+      <ul class="nav">
+        <li><a href="FaqjaKryesore.html">Faqja Kryesore</a></li>
+        <li style="background-color: rgb(255, 111, 0, 0.3); border-radius: 8px;"class="dropbtn">
+          <a href="#">Ushtrime</a>
+          <div class="dropdown-content">
+            <a href="#">Administrim Biznes</a>
+            <a href="#">Ekonomiks</a>
+            <a href="#">Finance-Kontabilitet</a>
+            <a href="Ushtrime.html">Informatike ekonomike</a>
+          </div>
+        </li>
+        <li class="dropbtn">
+          <a href="#">Kuice</a>
+          <div class="dropdown-content">
+            <a href="#">Administrim Biznes</a>
+            <a href="#">Ekonomiks</a>
+            <a href="#">Finance-Kontabilitet</a>
+            <a href="Kuice.html">Informatike ekonomike</a>
+          </div>
+        </li>
+        <li><a href="Pyetje.html">Pyetje</a></li>
+        <li><a href="Kontakt.html">Kontakt</a></li>
+      </ul>
+    </div>
+
+    <main>
+        <div class="search">
+          <label class="search-title" for="subjects"
+            >Zgjidh lenden per te cilen deshiron te shikoni ushtrime:</label
+          >
+          <select name="subjects" id="subjects" class="lendet">
+            <option value="programim">Programim ne Web</option>
+            <option value="databaza">Databazat</option>
+            <option value="statistike">Statistike</option>
+            <option value="makroekonomi">Makroekonomi</option>
+          </select>
+          <button class="buton-kerko" onclick="displayExercices()">Kerko</button>
+        </div>
+
+        <div class="ushtrimet" id="ushtrimet">
+            <span class="ushtrime-titulli">Ushtrime per Programim ne Web</span>
+            <span class="ushtrim" onclick="showImage1()">Ushtrim 1: Shkruaj kodin ne css ne menyre qe figura te mbuloje gjithe div.</span>
+            <img src="../IMAZHE/u1.PNG" alt="zgjidhja1" class="zgjidhja1" id="zgjidhja1">
+            <span class="ushtrim" onclick="showImage2()">Ushtrim 2: Si mund ta kuptojme nese butoni i pare radiobutton eshte i selektuar nga perdoruesi?</span>
+            <img src="../IMAZHE/u2.PNG" alt="zgjidhja2" class="zgjidhja2" id="zgjidhja2">
+            <span class="ushtrim" onclick="showImage2()">Ushtrim 3: Si mund te behet alert kur perdoruesi klikon div me id = alarm?</span>
+            <span class="ushtrim" onclick="showImage2()">Ushtrim 4: Si mund ta ndryshojme ngjyren e shkrimit te nje div kur mausi ben hover?</span>
+        </div>
+
+        <script src="../JS/Ushtrime.js"></script>
+  </body>
+</html>
+
+

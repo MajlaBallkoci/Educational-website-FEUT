@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../CSS/Kuice.css" />
+    <title>Kuice</title>
+  </head>
+  <body>
+    <header>
+      <img class="header-img" src="../IMAZHE/logo.png" />
+      <div class="header-text">
+        <span class="title">UNIVERSITETI I TIRANES</span>
+        <span class="subtitle">Fakulteti i Ekonomise</span>
+      </div>
+    </header>
+
+    <div class="menu">
+      <div class="nav-shadow"></div>
+      <ul class="nav">
+        <li><a href="FaqjaKryesore.html">Faqja Kryesore</a></li>
+        <li class="dropbtn">
+          <a href="#">Ushtrime</a>
+          <div class="dropdown-content">
+            <a href="#">Administrim Biznes</a>
+            <a href="#">Ekonomiks</a>
+            <a href="#">Finance-Kontabilitet</a>
+            <a href="Ushtrime.html">Informatike ekonomike</a>
+          </div>
+        </li>
+        <li
+          style="background-color: rgb(255, 111, 0, 0.3); border-radius: 8px"
+          class="dropbtn"
+        >
+          <a href="#">Kuice</a>
+          <div class="dropdown-content">
+            <a href="£">Administrim Biznes</a>
+            <a href="#">Ekonomiks</a>
+            <a href="#">Finance-Kontabilitet</a>
+            <a href="Kuice.html">Informatike ekonomike</a>
+          </div>
+        </li>
+        <li><a href="Pyetje.html">Pyetje</a></li>
+        <li><a href="Kontakt.html">Kontakt</a></li>
+      </ul>
+    </div>
+
+    <main>
+      <div class="search">
+        <label class="search-title" for="subjects"
+          >Zgjidh lenden per te cilen deshiron te shikoni kuice:</label
+        >
+        <select name="subjects" id="subjects" class="lendet">
+          <option value="programim">Programim ne Web</option>
+          <option value="databaza">Databazat</option>
+          <option value="statistike">Statistike</option>
+          <option value="makroekonomi">Makroekonomi</option>
+        </select>
+        <button class="buton-kerko" onclick="displayQuiz()">Kerko</button>
+      </div>
+      <pre class="result" id="result"></pre>
+
+      <div class="forma" id="programim">
+        <form name="myForm">
+          Emri:<br />
+          <input
+            type="text"
+            name="firstname"
+            value=""
+            id="emri"
+            required
+          /><br /><br />
+          1.HTML qendron per:<br />
+          <input type="radio" name="opsion1" value="v1" checked /> Home Tool
+          Markup Language <br />
+          <input type="radio" name="opsion1" value="v2" /> Hypertext Markup
+          Lauanguage <br />
+          <input type="radio" name="opsion1" value="v3" /> Hyperlinks and Text
+          Markup Language <br /><br />
+          2.Zgjidh formen korrekte per te krijuar heading me te madh:<br />
+          <input type="radio" name="opsion2" value="v1" checked /> h1 <br />
+          <input type="radio" name="opsion2" value="v2" /> h6 <br />
+          <input type="radio" name="opsion2" value="v3" /> heading <br /><br />
+          3.Si behet nderprerja e rreshtit dhe kalimi poshte? <br />
+          <input type="radio" name="opsion3" value="v1" checked /> br <br />
+          <input type="radio" name="opsion3" value="v2" /> lb <br />
+          <input type="radio" name="opsion3" value="v3" /> break <br /><br />
+          4.Zgjidh fjalite e sakta:<br />
+          <input type="checkbox" name="opsion4" value="v1" selected /> Paragrafi
+          definohet me tagun p<br />
+          <input type="checkbox" name="opsion4" value="v2" /> Vlerat RGB
+          konsistojne ne te kuqe, gri, blu <br />
+          <input type="checkbox" name="opsion4" value="v3" /> Alt eshte nje
+          atribut i imazhit <br />
+          <input type="checkbox" name="opsion4" value="v4" /> ID ka peshe me te
+          madhe se klasa <br />
+          <br />
+          5.Me cfare duhet te nisi cdo dokument HTML? <br />
+          <input
+            type="text"
+            name="bandwidth"
+            value=""
+            id="pyetja5"
+          /><br /><br />
+          Si e ndjeni veten ne kete lende?<br />
+          <select name="rezultat">
+            <option value="Shmire">Shume mire</option>
+            <option value="Mire">Mire</option>
+            <option value="Keq">Keq</option>
+            <option value="sedi">Nuk e di</option>
+          </select>
+          <br /><br />
+          Komente mbi kuicin:<br />
+          <textarea name="message" rows="10" cols="30">
+Shkruaj nje koment per kuicin...</textarea
+          >
+        </form>
+        <button class="forma-buton" onclick="showResult()">Rezultati</button>
+      </div>
+
+      <div class="forma" id="databaza">
+        <form name="myForm">
+          Emri:<br />
+          <input type="text" name="firstname" value="" required /><br /><br />
+          1.Komanda ne MySQL per te selektuar te dhenat nga databaza eshte:<br />
+          <input type="radio" name="opsion1" value="v1" checked /> OPEN <br />
+          <input type="radio" name="opsion1" value="v2" /> EXTRACT <br />
+          <input type="radio" name="opsion1" value="v3" /> SELECT <br /><br />
+          <input type="radio" name="opsion1" value="v3" /> GET<br /><br />
+          2.Komanda ne MySQL per te rifreskuar te dhenat nga databaza eshte:<br />
+          <input type="radio" name="opsion2" value="v1" checked /> INSERT <br />
+          <input type="radio" name="opsion2" value="v2" /> UPDATE <br />
+          <input type="radio" name="opsion2" value="v3" /> SAVE <br /><br />
+          <input type="radio" name="opsion2" value="v3" /> MODIFY <br /><br />
+          3.2.Komanda ne MySQL per te fshire te dhenat nga databaza eshte:
+          <br />
+          <input type="radio" name="opsion3" value="v1" checked /> COLLAPSE
+          <br />
+          <input type="radio" name="opsion3" value="v2" /> REMOVE <br />
+          <input type="radio" name="opsion3" value="v3" /> DELETE<br /><br />
+          4.Zgjidh fjalite e sakta:<br />
+          <input type="checkbox" name="opsion4" value="v1" selected /> MySQL
+          perdoret ne databaza racionale<br />
+          <input type="checkbox" name="opsion4" value="v2" /> MySQL perdoret ne
+          databaza joracionale <br />
+          <br />
+          5.Shkruani komanden per te kthyer numrin e rekordeve ne nje tabele te
+          quajtur "Personat" <br />
+          <input type="text" name="bandwidth" value="" /><br /><br />
+          Si e ndjeni veten ne kete lende?<br />
+          <select name="rezultat">
+            <option value="Shmire">Shume mire</option>
+            <option value="Mire">Mire</option>
+            <option value="Keq">Keq</option>
+            <option value="sedi">Nuk e di</option>
+          </select>
+          <br /><br />
+          Komente mbi kuicin:<br />
+          <textarea name="message" rows="10" cols="30">
+Shkruaj nje koment per kuicin...</textarea
+          >
+        </form>
+        <button class="forma-buton" onclick="showResult()">Rezultati</button>
+      </div>
+    </main>
+
+    <script src="../JS/Kuice.js"></script>
+  </body>
+</html>

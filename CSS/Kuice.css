@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #42454a;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  padding: 10px;
+  background-color: #32353d;
+  border-bottom: 3px rgb(255, 111, 0) solid;
+}
+
+.header-img {
+  width: 70px;
+}
+
+.header-text {
+  margin-top: 25px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-shadow: 2px 0px 4px black;
+}
+
+.title {
+  font-size: 22px;
+}
+
+.subtitle {
+  font-size: 16px;
+}
+
+.menu {
+  margin-left: 872px;
+}
+
+.nav-shadow {
+  width: 554px;
+  height: 50px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 13px black;
+  background-color: rgb(255, 111, 0);
+  margin-top: -25px;
+  margin-left: 6px;
+}
+
+.nav {
+  list-style-type: none;
+  display: flex;
+  background-color: #333;
+  width: 550px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px black;
+  margin-top: -44px;
+  padding-left: 0px;
+}
+
+li {
+  margin-left: 10px;
+  padding: 15px;
+  color: white;
+  font-size: 19px;
+}
+
+a {
+  color: white;
+  text-decoration: none; /* no underline */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-top: 10px;
+  margin-left: -15px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(233, 129, 50, 0.548);
+}
+
+.dropbtn:hover .dropdown-content {
+  display: block;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  margin-left: 900px;
+  margin-top: 100px;
+}
+
+.lendet {
+  padding: 10px;
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.748);
+  border-radius: 8px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  border: 2px rgb(255, 111, 0, 0.4) solid;
+}
+
+.search-title {
+  color: white;
+  text-shadow: 2px 0px 4px black;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.buton-kerko {
+  background-color: rgb(255, 111, 0, 0.4);
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 8px;
+  width: 200px;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: rgb(255, 111, 0.5);
+}
+
+.forma {
+  margin-left: 50px;
+  margin-top: -640px;
+  padding: 50px;
+  background-color: #4f5154;
+  color: white;
+  border: 2px rgb(255, 111, 0.5) solid;
+  box-shadow: 20px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  width: 500px;
+  display: none;
+}
+
+.result {
+  color: rgb(255, 111, 0.5);
+  text-shadow: 2px 0px 4px black;
+  font-size: 20px;
+  margin-left: 900px;
+  margin-top: 30px;
+  font-family: "Times New Roman", Times, serif;
+  height: 400px;
+}
+
+.forma-buton {
+  background-color: rgb(255, 111, 0, 0.4);
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 8px;
+  width: 200px;
+  margin-left: 316px;
+}

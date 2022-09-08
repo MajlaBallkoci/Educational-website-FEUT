@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../CSS/Pyetje.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Pyetje</title>
+  </head>
+  <body>
+    <header>
+      <img class="header-img" src="../IMAZHE/logo.png" />
+      <div class="header-text">
+        <span class="title">UNIVERSITETI I TIRANES</span>
+        <span class="subtitle">Fakulteti i Ekonomise</span>
+      </div>
+    </header>
+
+    <div class="menu">
+      <div class="nav-shadow"></div>
+      <ul class="nav">
+        <li><a href="FaqjaKryesore.html">Faqja Kryesore</a></li>
+        <li class="dropbtn">
+          <a href="#">Ushtrime</a>
+          <div class="dropdown-content">
+            <a href="#">Administrim Biznes</a>
+            <a href="#">Ekonomiks</a>
+            <a href="#">Finance-Kontabilitet</a>
+            <a href="Ushtrime.html">Informatike ekonomike</a>
+          </div>
+        </li>
+        <li class="dropbtn">
+          <a href="#">Kuice</a>
+          <div class="dropdown-content">
+            <a href="£">Administrim Biznes</a>
+            <a href="#">Ekonomiks</a>
+            <a href="#">Finance-Kontabilitet</a>
+            <a href="Kuice.html">Informatike ekonomike</a>
+          </div>
+        </li>
+        <li style="background-color: rgb(255, 111, 0, 0.3); border-radius: 8px;"><a href="Pyetje.html">Pyetje</a></li>
+        <li><a href="Kontakt.html">Kontakt</a></li>
+      </ul>
+    </div>
+
+    <div class="ask">
+      <span class="ask-titulli"> Nuk e shikoni pyetjen qe doni?</span>
+      <span class="ask-teksti"> Beni pyetjen tuaj! </span>
+      <form class="forma">
+        Emri:<br>
+        <input type="text" size="19" name="Contact-Name" id='emri' required><br><br>
+        Email:<br>
+        <input type="email" id="email" name="Contact-Email" required><br><br> 
+        Mesazhi:<br> 
+        <textarea name="Contact-Message" rows="6″ cols="20″  id='msg' required></textarea><br><br> 
+        <button onclick="dergo()">Dergo</button>
+    </form> 
+    <span id="feedback">Messazhi juaj u dergua me sukses!</span> 
+    </div>
+
+    <div class="pyetje">
+      <div class="collapsible" onclick="openAnswer1()"><i class="fa fa-question-circle-o"></i> Sa kredite do te me duhen per te kaluar vitin e pare?</div>
+      <div class="content" id="answer1">Per te kaluar vitin e pare do ju duhen te pakten 30 kredite, te fituara ne te dyja semestrat.</div>
+      <div class="collapsible"  onclick="openAnswer2()"><i class="fa fa-question-circle-o"></i> Si mund te gjej nje vend per te bere praktiken?</div>
+      <div class="content" id="answer2">Zakonisht eshte pergjegjesi e studentit te gjeje nje kompani per te bere praktiken. Megjithate studenti mund t'i drejtohet gjithmone stafit mesimor dhe zyres se karrieres per sygjerime dhe rekomandime.</div>
+      <div class="collapsible"  onclick="openAnswer3()"><i class="fa fa-question-circle-o"></i> A duhet te kem nje cerfitikate anglishteje per tu regjistruar ne nje dege Master?</div>
+      <div class="content" id="answer3">Zakonisht eshte pergjegji e studentit te gjeje nje kompani per te bere praktiken. Megjithate studenti mund t'i drejtohet gjithmone stafit mesimor dhe zyres se karrieres per sygjerime dhe rekomandime.</div>
+      <div class="collapsible"  onclick="openAnswer4()"><i class="fa fa-question-circle-o"></i> A mund ta prezantoj diplomen nese kam ende provime pa marre?</div>
+      <div class="content" id="answer4">Zakonisht eshte pergjegji e studentit te gjeje nje kompani per te bere praktiken. Megjithate studenti mund t'i drejtohet gjithmone stafit mesimor dhe zyres se karrieres per sygjerime dhe rekomandime.</div>
+
+
+
+
+    <script src="../JS/Pyetje.js"></script>
+  </body>
+</html>
